@@ -1,0 +1,80 @@
+.plans-container {
+    display: flex;
+    justify-content: center;
+    margin: 40px 0px;
+}
+
+.plan-column {
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.plan {
+    border: 1px solid #d4d4d4;
+    border-radius: 15px;
+    width: 300px;
+    margin: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.08);
+    transition: 0.3s;
+    text-align: center;
+    flex: 1;
+}
+
+.plan:hover {
+    transform: scale(1.1);
+}
+
+.plan-image {
+    width: 90%;
+    height: auto;
+    border-bottom: 1px solid #d4d4d4;
+}
+
+.plan-title {
+    font-size: 25px;
+    font-weight: bolder;
+    margin: 8px 0;
+    color: #09899a;
+}
+
+.plan-price {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #333;
+}
+
+.plan-price > i {
+    margin-right: 5px;
+}
+
+/* Subscribe button styling */
+.subscribe-button {
+    width: 50%;
+    background-color: #09899a;
+    color: white;
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.1);
+    margin: 15px 5%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.subscribe-button:hover {
+    filter: brightness(90%);
+}
+
+@media screen and (max-width: 688px) {
+    .plan-column {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .plan {
+        width: 70%;
+        margin: 15px 0;
+    }
+}

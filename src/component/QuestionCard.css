@@ -1,0 +1,43 @@
+/* Card.css */
+.card {
+    width: 30%;
+    height: 30vh;
+    margin: 20px auto;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    transition: 0.8s;
+}
+
+.card:hover{
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2); 
+    cursor: pointer;
+}
+
+.card.expanded {
+    height: 40vh;
+    transition: 0.8s;
+}
+
+.description{
+    font-size: 22px;
+}
+.quesTitle{
+    font-weight: bolder;
+}
+.tags{
+    font-size: 18px;
+}
+
+.deleteQues:hover{
+    color: white;
+    background-color: black;
+    transition: 0.3s;
+}
+
+.filter{
+    padding: 10px 20px;
+    margin: 10px;
+}

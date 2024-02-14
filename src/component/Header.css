@@ -1,0 +1,50 @@
+.navBar {
+    background-color:  #09899a;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 30px;  /* Padding to the navigation bar for some space */
+}
+.searchBar {
+    width: 50vw;
+    padding: 5px;
+    padding-left: 20px;
+    border-radius: 5px;
+    border: none;
+    font-size: 20px;
+}
+.navButton{
+    color: white;
+    font-size: 20px;
+    padding: 3px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0 8px 10px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.navButton:hover{
+    filter: brightness(80%);
+    transition: 0.5s;
+}
+.nav-links.collapsed {
+    display: none; /* Initially hidden in smaller screens */
+}
+
+.icon {
+    display: none; /* Initially hidden in larger screens */
+}
+
+/* Screen size breakpoint */
+@media screen and (max-width: 600px) {
+    .nav-links {
+        display: none; /* All buttons are hidden */
+    }
+
+    .nav-links.collapsed {
+        display: block; /* Display when the icon is clicked */
+    }
+
+    .icon {
+        display: block; /* Icon is shown */
+    }
+}

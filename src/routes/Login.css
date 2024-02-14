@@ -1,0 +1,49 @@
+.parent {
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.login-container {
+    border: 2px solid #4949ee;
+    border-radius: 20px;
+    margin: 20px;
+    padding: 50px 50px;
+    position: relative;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.logininput {
+    width: 450px;
+    padding: 7px 10px;
+    border-radius: 5px;
+    margin: 20px 0px;
+}
+
+.signupbutton {
+    text-decoration: none;
+    color: #4949ee;
+    position: absolute; 
+    bottom: 50px;          
+    right: 60px;  
+}
+
+
+.loginbutton {
+    font-family: 'Inconsolata', sans-serif;
+    background-color: #4949ee;
+    color: white;
+    border: none;
+    padding: 10px 0px;
+    width: 450px;
+    font-size: 25px;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+.loginbutton:hover {
+    background-color: #5151e8;
+    transition: 0.5s;
+    cursor: pointer;
+}

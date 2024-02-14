@@ -1,0 +1,17 @@
+.radio{
+    font-size: 18px;
+    margin: 10px 0px;
+}
+
+.html{
+    margin: 2% 15%;
+}
+
+.select{
+    margin-right: 10px;
+    margin-left: 50px;
+}
+
+input[type=radio]:hover{
+    cursor: pointer;
+}

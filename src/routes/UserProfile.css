@@ -1,0 +1,9 @@
+.profile{
+    margin: 30px auto;
+    padding: 20px;
+    border: 2px solid #000000;
+    border-radius: 5px;
+    align-items: center;
+    width: 350px;
+    background-color: antiquewhite;
+}

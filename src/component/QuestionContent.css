@@ -1,0 +1,35 @@
+.content {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+input[type=text] {
+    margin: 10px 0px;
+    margin-left: 15px;
+}
+
+textarea {
+    width: 100%;
+}
+
+.post {
+    text-align: right;
+}
+
+.postbutton {
+    padding: 8px 8%;
+    margin: 10px;
+    border: none;
+    background-color: #09899a;
+    color: white;
+    transition: 0.5s;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.postbutton:hover { 
+    filter: brightness(80%);
+}
+.code{
+    border: 2px black solid;
+}
