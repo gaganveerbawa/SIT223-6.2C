@@ -9,7 +9,7 @@ function Header() {
 
         <div className='navBar'>
             <Link to="/" style={{ textDecoration: 'none', color: 'white' }}>
-                <h4><b><i className="fa fa-home"></i> DEV@Deakin</b></h4>
+                <h4><b><i className="fa fa-home"></i> DEV@Gagan</b></h4>
             </Link>
 
             <input className='searchBar' type="searchBar" placeholder="&#xF002; 
