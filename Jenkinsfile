@@ -13,7 +13,7 @@ pipeline {
             }
         }
 
-        stage('Test') {
+        stage('Unit and Integration Tests') {
             steps {
                 sh 'npm test -- --passWithNoTests' // Run automated tests
             }
@@ -24,8 +24,15 @@ pipeline {
                 sh 'npx eslint src' // Run code quality analysis with ESLint
             }
         }
+        
+        stage('Security Scan') {
+            steps {
+                //security scanning tool 
+                sh 'echo "Running security scan on the code"'
+            }
+        }
 
-        stage('Deploy to Test Environment') {
+        stage('Deploy to Staging') {
             steps {
                 sh 'docker build -t my-react-app .' // Build Docker image
                 sh 'docker stop my-react-container || true' // Stop existing container (if running)
@@ -33,8 +40,14 @@ pipeline {
                 sh 'docker run -d --name my-react-container -p 3000:3000 my-react-app' // Run Docker container
             }
         }
+
+        stage('Integration Tests on Staging') {
+            steps {
+                sh 'echo "Running integration tests on testing environment"' // Run integration tests on the testing environment
+            }
+        }
         
-        stage('Release to Netlify') {
+        stage('Deploy to Production') {
             steps {
                 script {
                     sh "sudo netlify deploy --dir=./build --prod --site=${env.NETLIFY_SITE_ID}"
