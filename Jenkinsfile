@@ -41,7 +41,7 @@ pipeline {
             }
         }
 
-        stage('Integration Tests on Staging') {
+        stage('Integration Tests') {
             steps {
                 sh 'echo "Running integration tests on testing environment"' // Run integration tests on the testing environment
             }
